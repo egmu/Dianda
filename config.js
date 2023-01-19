@@ -25,36 +25,36 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       
 
 /*============== INFO OWNER ==============*/
-global.sig = 'https://instagram.com/saep.02'
-global.syt = 'https://youtube.com/@fuadxyro5248'
-global.sgh = 'https://github.com/Saep'
-global.sgc = 'https://chat.whatsapp.com/bisau'
-global.swa = 'wa.me/628812743180'
-global.swb = 'https://discord.gg/4HvezMAw'
-global.snh = 'https://nhentai.net/g/365296/' //Make ini aja gausah di ganti.
-
+global.sig = 'https://instagram.com/yusufriz00'
+global.syt = 'https://youtube.com/@DEVIL-X-CODE'
+global.sgh = 'https://github.com/egmu'
+global.sgc = 'https://chat.whatsapp.com/'
+global.sdc = 'https://wa.me/6289519240209'
+global.swa = 'wa.me/6289519240209'
+global.swb = 'https://discord.gg/'
+global.snh = 'https://nhentai.net/g/365296/'
 /*============== PAYMENT ==============*/
-global.pdana = '-'
-global.povo = '-'
-global.pgopay = '-'
-global.ppulsa = '-'
-global.ppulsa2 = '-'
-global.psaweria = '-'
+global.pdana = '6289519240209'
+global.povo = '6289519240209'
+global.pgopay = '6289519240209'
+global.ppulsa = '6289519240209'
+global.ppulsa2 = '6289519240209'
+global.psaweria = 'https://saweria.co/Rzal23'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6288221354110'
-global.nomorown = '628989513496'
-global.nomorown1 = '628989513496'
-global.namebot = 'NeKo-Bot'
-global.nameown = '𝘽𝙖𝙣𝙜 𝙁𝘿'
+global.nomorown1 = '62881036181320'
+global.nomorbot = '62881036181320'
+global.nomorown = '6289519240209'
+global.namebot = 'Why I Care?'
+global.nameown = 'Matchalalumu'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6288221354110'],
-  ['6283891677178'],
-  ['18126338970'],
-  ['628989513496', '𝘽𝙖𝙣𝙜 𝙁𝘿', true]
+  ['6289519240209'],
+  ['6289519240209'],
+  ['6289519240209'],
+  ['6289519240209', 'Matchalalumu', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -104,16 +104,17 @@ global.bear = 'VBkM7rbU'
 
 
 /*============== WATERMARK ==============*/
-global.wm = 'By NeKo-Bot' //Main Watermark
-global.wm2 = '𝘽𝙖𝙣𝙜 𝙁𝘿'
-global.wm3 = 'NeKo-Bot | By 𝘽𝙖𝙣𝙜 𝙁𝘿'
+global.gcname = '𝑺𝒊𝒎𝒑𝒍𝒆 𝑩𝒐𝒕 𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑩𝒚 Egmu'//nama group kalian
+global.wm = 'By Why I Care?' //Main Watermark
+global.wm2 = 'Why I Care?'
+global.wm3 = 'Why I Care? | Matchalalumu'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = `NeKo-Bot | ʙʏ ${global.nameown}`
-global.author = '𝘽𝙖𝙣𝙜 𝙁𝘿'
-global.packname = '𝘽𝙖𝙣𝙜 𝙁𝘿'
+global.titlebot = `Why I Care? | ʙʏ ${global.nameown}`
+global.author = 'Why I Care?' 
+global.packname = 'Why I Care?'
 global.danied = '✘ 𝗘𝗥𝗢𝗥 𝟰𝟬𝟰'
-global.ultahowner = 'Juli 11 2022'
+global.ultahowner = 'Neraka'
 
 
 /*============== LOGO ==============*/
@@ -130,11 +131,11 @@ global.thumbWarn = 'https://telegra.ph/file/a5eb5169ab1330a537e0b.jpg'
 global.botintro = 'Hallo, Kenalin saya NexBotz Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh NexEp Saya di rilis pada tanggal\n🗓 ️_16/10/2022_'
 global.intro = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
 /*============== GLOBAL BIO ==============*/
-global.nameowner = '𝘽𝙖𝙣𝙜 𝙁𝘿'
-global.umurowner = '19'
-global.asalowner = 'Jawa Barat, Bekasi'
-global.nomorowner = 'wa.me/628989513496'
-global.pacarowner = 'Kaede Hitotsuba'
+global.nameowner = 'Matchalalumu'
+global.umurowner = '20'
+global.asalowner = 'Jawa Timur, ......'
+global.nomorowner = 'wa.me/6289519240209'
+global.pacarowner = 'Gada'
 
 /*============== TEXT ==============*/
 global.wait = '```𝙇𝙤𝙖𝙙𝙞𝙣𝙜...```'
@@ -388,8 +389,8 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 'https://i.pinimg.com/originals/fd/21/41/fd21419275236bb153de3c8dcbbf3bf9.jpg',
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 /*============== STICKER WM ==============*/
-global.stickpack = 'By NexBotz'
-global.stickauth = `𝘽𝙖𝙣𝙜 𝙁𝘿`
+global.stickpack = 'By Why I Care?'
+global.stickauth = `Matchalalumu`
 
 global.multiplier = 38 // The higher, The harder levelup
 
