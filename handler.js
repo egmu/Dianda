@@ -7,6 +7,7 @@ import chalk from 'chalk'
 import Jimp from 'jimp'
 import fs from 'fs'
 import fetch from 'node-fetch'
+let setting  = require ('./setting.json')
 const printMessage = (await import('./lib/print.js')).default
 /**
  * @type {import('@adiwajshing/baileys')}
@@ -610,6 +611,50 @@ esteh: 0,
         resolve(ab)
     })
 }
+ let argsLog = (budy.length > 30) ? `${q.substring(0, 30)}...` : budy
+
+        if (setting.autoAI) {
+            // Push Message To Console && Auto Read
+            if (argsLog && !msg.isGroup) {
+            sock.readMessages([msg.key])
+            console.log(chalk.black(chalk.bgGreen('[ CMD ]')), color(argsLog, 'turquoise'), chalk.magenta(`[ ${msg.sender.replace('@s.whatsapp.net', '@s.whatsapp.net')} ]`))
+            } else if (argsLog && msg.isGroup) {
+            // sock.sendReadReceipt(msg.chat, msg.sender, [msg.key.id])
+            console.log(chalk.black(chalk.bgGreen('[ CMD ]')), color(argsLog, 'turquoise'), (`[ ${msg.sender.replace('@s.whatsapp.net', '@s.whatsapp.net')} ]`), chalk.blueBright('| Goup :'), chalk.magenta(groupName))
+            }
+        } else if (!setting.autoAI) {
+            if (isCmd2 && !msg.isGroup) {
+                console.log(chalk.black(chalk.bgGreen('[ CMD ]')), color(argsLog, 'turquoise'), chalk.blue(`[ ${msg.sender.replace('@s.whatsapp.net', '@s.whatsapp.net')} ]`))
+                } else if (isCmd2 && msg.isGroup) {
+                console.log(chalk.black(chalk.bgGreen('[ CMD ]')), color(argsLog, 'turquoise'), chalk.magenta(`[ ${msg.sender.replace('@s.whatsapp.net', '')} ]`), chalk.blueBright('| Group :'), chalk.yellow(groupName))
+                }
+        }
+
+    if (setting.autoAI) {
+        if (budy) {
+            try {
+            if (setting2.keyopenai === 'ISI_APIKEY_OPENAI_DISINI') return reply('Mohon Isi Api Di config.js')
+            const configuration = new Configuration({
+              apiKey: setting.keyopenai, 
+            });
+            const openai = new OpenAIApi(configuration);
+            
+            const response = await openai.createCompletion({
+              model: "text-davinci-003",
+              prompt: budy,
+              temperature: 0.3,
+              max_tokens: 3000,
+              top_p: 1.0,
+              frequency_penalty: 0.0,
+              presence_penalty: 0.0,
+            });
+            msg.reply(`${response.data.choices[0].text}\n\n`)
+            } catch(err) {
+                console.log(err)
+                msg.reply('Eror 404.')
+            }
+        }
+    }
           global.kontak2 = [
         ['6288221354110', 'NexBotz', 'Creator Bot', 'Creator Bot', true],
         [`${nomorown}`, `${nameown}`, 'Owner Bot', 'Owner Bot', true]
